@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+}
+head{
+    display: none;
+}
+body{
+    background: black;
+    width: 100%;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.initial{
+    display: hidden;
+}
+
+main{
+    background: white;
+    width: 60%;
+    border-radius: 20px;
+    position: relative;
+    padding: 4%;
+    align-self: center;
+    font-family: 'Playfair Display', serif;
+    border: rgba(128, 128, 128, 0.658) solid 2px;
+   
+}
+heading{
+    align-self: center;
+    width: 50%;
+}
+heading>ul{
+    padding:0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img:hover{
+    opacity: 0.5;
+}
+.initial,#sideBar{
+    font-family: 'Gravitas One', cursive;
+}
+a:hover{
+    cursor: default;
+
+}
+/* not working due to JS?*/
+.home,#sideBar,a:hover,button:focus,a:focus,button:hover{
+    color: rgb(175, 226, 247);
+}
+
+/* button styling */
+button{
+    color: white;
+    background: none;
+    border: none; 
+    font-size: 30px;
+    outline:none;
+}
+
+.projectDescription>a{
+    color: black; 
+}
+.personalBio, .projectsPageData{
+    flex-direction: column;
+}
+.projectsPageData{
+    align-items: center;
+}
+/* .projectsPageData>h2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+} */
+.socialIcons{
+    justify-content: space-around;
+    background: white;
+    margin: 0;
+    padding: 15px;
+
+}
+.corner{
+    position: absolute;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+.codingCount{
+    width: 100%;
+    align-self: center;
+    justify-content: center;
+    padding: 5%
+}
+
+img{
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (min-width: 600px){
+    #sideBar{
+        padding: 0;
+        margin: 0;
+        width: 50px; 
+        position: absolute;
+        right: 60px;
+        top: 400px;
+    }
+    img{
+        flex-grow: 1;
+    }
+    
+} 
+@media screen and (min-width: 750px){
+    .initial{
+        font-size: 70px;
+        color:rgb(175, 226, 247);
+        padding: 5px;
+        margin:0;
+    }
+    .corner{
+        position: absolute;
+        top: 0;
+        display: inline;
+        width: 80px;
+    }
+    .socialIcons{
+        flex-direction: column;
+        background: none;
+        height: 180px; 
+        justify-content: space-between;
+        padding: 0;
+    }
+    .social{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+} 
+
+
+
