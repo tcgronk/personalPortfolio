@@ -2,6 +2,7 @@
     box-sizing: border-box;
     display: flex;
     text-align: center;
+
 }
 head{
     display: none;
@@ -10,7 +11,7 @@ body{
     background: black;
     width: 100%;
     flex-direction: column;
-    overflow: scroll;
+    
 }
 
 .initial{
@@ -26,7 +27,9 @@ main{
     align-self: center;
     font-family: 'Playfair Display', serif;
     border: rgba(128, 128, 128, 0.658) solid 2px;
-   
+    max-height: 300px;
+    overflow: scroll;
+    font-size: 14px;
 }
 heading{
     align-self: center;
@@ -166,7 +169,13 @@ img{
     .social>a{
         color: white;
     }
-   
+    main{
+        max-height: 700px; 
+        font-size: 18px;
+    }
+    heading{
+        margin-top: 8%;
+    }
 } 
 
 
