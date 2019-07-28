@@ -31,6 +31,7 @@ main{
 heading{
     align-self: center;
     width: 50%;
+    margin-top: 10%;
 }
 heading>ul{
     padding:0;
@@ -41,10 +42,18 @@ heading>ul{
 a{
     text-decoration: none;
 }
-.socialIcons{
-    color: black; 
+h2{
+    color: black;     
 }
-
+.projectDescription{
+    display: block;
+    text-align: center;
+}
+.projectDescription>a{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 img:hover{
     opacity: 0.5;
 }
@@ -70,13 +79,10 @@ button{
 }
 
 
-.personalBio, .projectsPageData{
+.personalBio, .projectsPageData,.contacting{
     flex-direction: column;
-}
-.projectsPageData{
     align-items: center;
 }
-/* doesnt seem to be working */
 .projectsPageData>a{
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +95,9 @@ button{
     margin: 0;
     padding: 15px;
               
+}
+.social>a{
+    color: black;
 }
 .corner{
     position: absolute;
@@ -111,7 +120,7 @@ button{
 img{
     width: 50%;
     margin-left:auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 
 
@@ -130,8 +139,6 @@ img{
         max-width: 400px;
     }
     
-} 
-@media screen and (min-width: 750px){
     .initial{
         font-size: 70px;
         color:rgb(175, 226, 247);
@@ -156,7 +163,10 @@ img{
         margin-left:auto;
         margin-right:auto;
     }
-
+    .social>a{
+        color: white;
+    }
+   
 } 
 
 
