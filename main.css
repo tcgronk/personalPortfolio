@@ -71,7 +71,7 @@ a:hover{
 .home,#sideBar,a:hover,button:focus,a:focus,button:hover{
     color: rgb(175, 226, 247);
 }
-
+/* selected add class*/
 /* button styling */
 button{
     color: white;
@@ -141,7 +141,7 @@ img{
     img{
         flex-grow: 1;
         max-width: 350px;
-        margin:0;
+        margin-bottom:0;
     }
     
     .initial{

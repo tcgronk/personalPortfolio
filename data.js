@@ -20,10 +20,7 @@ function sideBar(){
 
 function homePage(){
     $(".home").on("click",function(event){
-        $(".home").css("color","rgb(175, 226, 247)");
-        $(".projects").css("color","white");
-        $(".contactMe").css("color","white");
-        $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management.</p></section>");
+        renderHomePage();
     });
 }
 
@@ -45,11 +42,21 @@ function contactPage(){
         $('main').html("<section class='contacting'><p>Thanks for reaching out! The best way to get in contact with me is by emailing me at {tessgronski@gmail.com}</p></section>");
     });
 }
-
-$( document ).ready(function() {
-    $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management. </p></section>");
+function renderHomePage(){
     $(".home").css("color","rgb(175, 226, 247)");
-});
+    $(".projects").css("color","white");
+    $(".contactMe").css("color","white");
+    $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management.</p></section>");
+}
+
+
+
+// $( document ).ready(function() {
+//     // $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management. </p></section>");
+//     // $(".home").css("color","rgb(175, 226, 247)");
+    
+// });
+
 
 
 function createPortfolio(){
@@ -57,7 +64,9 @@ function createPortfolio(){
     sideBar();
     projectsPage();
     contactPage();
-    getDate();
+    renderHomePage();
+    
+    
 }
 
 $(createPortfolio);
