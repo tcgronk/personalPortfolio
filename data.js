@@ -20,6 +20,9 @@ function sideBar(){
 
 function homePage(){
     $(".home").on("click",function(event){
+        $(".home").addClass("selected");
+        $(".contactMe").removeClass("selected");
+        $(".projects").removeClass("selected");
         renderHomePage();
     });
 }
@@ -27,25 +30,25 @@ function homePage(){
 
 function projectsPage(){
     $(".projects").on("click", function(event){
-        $(".home").css("color","white");
-        $(".projects").css("color","rgb(175, 226, 247)");
-        $(".contactMe").css("color","white");
+        $(".home").removeClass("selected");
+        $(".projects").addClass('selected');
+        $(".contactMe").removeClass("selected");
         $("main").html("<section class='projectsPageData'><section class='projectDescription'><a href='https://github.com/tcgronk/Quiz-App' target='_blank'><h2>Quiz App</h2></a><p>Check out my first project! To create this quiz app, I used HTML, CSS, Javascript, & jQuery. </p></section><section><a class='wineApp' href='https://tcgronk.github.io/Quiz-App/' target='_blank'><img src='portfolio-wine.jpg' alt='portfolio quiz app'></a></section>");
     });
 }
 
 function contactPage(){
     $(".contactMe").on("click", function(event){
-        $(".home").css("color","white");
-        $(".contactMe").css("color","rgb(175, 226, 247)");
-        $(".projects").css("color","white");
+        $(".home").removeClass("selected");
+        $(".contactMe").addClass("selected");
+        $(".projects").removeClass("selected");
         $('main').html("<section class='contacting'><p>Thanks for reaching out! The best way to get in contact with me is by emailing me at {tessgronski@gmail.com}</p></section>");
     });
 }
 function renderHomePage(){
-    $(".home").css("color","rgb(175, 226, 247)");
-    $(".projects").css("color","white");
-    $(".contactMe").css("color","white");
+    $(".home").addClass("selected");
+    $(".projects").removeClass("selected");
+    $(".contactMe").removeClass("selected");
     $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management.</p></section>");
 }
 
