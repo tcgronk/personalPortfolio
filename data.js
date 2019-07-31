@@ -33,7 +33,7 @@ function projectsPage(){
         $(".home").removeClass("selected");
         $(".projects").addClass('selected');
         $(".contactMe").removeClass("selected");
-        $("main").html("<section class='projectsPageData'><section class='projectDescription'><a href='https://github.com/tcgronk/Quiz-App' target='_blank'><h2>Quiz App</h2></a><p>Check out my first project! To create this quiz app, I used HTML, CSS, Javascript, & jQuery. </p></section><section><a class='wineApp' href='https://tcgronk.github.io/Quiz-App/' target='_blank'><img src='portfolio-wine.jpg' alt='portfolio quiz app'></a></section>");
+        $("main").html("<section class='projectsPageData'><section class='projectDescription'><a href='https://github.com/tcgronk/Quiz-App' target='_blank'><h2>Quiz App</h2></a></section><p>Check out my first project! To create this quiz app, I used HTML, CSS, Javascript, & jQuery. </p><section><a class='wineApp' href='https://tcgronk.github.io/Quiz-App/' target='_blank'><img src='portfolio-wine.jpg' alt='portfolio quiz app'></a></section>");
     });
 }
 
