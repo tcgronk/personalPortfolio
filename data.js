@@ -54,11 +54,7 @@ function renderHomePage(){
 
 
 
-// $( document ).ready(function() {
-//     // $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management. </p></section>");
-//     // $(".home").css("color","rgb(175, 226, 247)");
-    
-// });
+
 
 
 
