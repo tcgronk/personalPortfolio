@@ -165,6 +165,7 @@ img{
     main{
         max-height: 700px; 
         font-size: 18px;
+        text-align: center;
     }
     heading{
         margin-top: 8%;
