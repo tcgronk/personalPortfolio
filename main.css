@@ -79,7 +79,7 @@ button{
     align-items: center;
     width: 100%;
 }
-.projectsPageData>a,.projectsPageData>p{
+.projectsPageData>a,.projectsPageData>p, .contacting>p{
     margin-left: auto;
     margin-right: auto;
     display: block;
