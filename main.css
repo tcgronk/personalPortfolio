@@ -71,7 +71,7 @@ button{
     color: white;
     background: none;
     border: none; 
-    font-size: 30px;
+    font-size: 35px;
     outline:none;
 }
 .personalBio, .projectsPageData,.contacting{
@@ -89,7 +89,7 @@ button{
     justify-content: space-around;
     background: white;
     margin: 0;
-    padding: 15px;              
+    font-size: 24px;
 }
 .social>a{
     color: black;
