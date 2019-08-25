@@ -33,7 +33,7 @@ function projectsPage(){
         $(".home").removeClass("selected");
         $(".projects").addClass('selected');
         $(".contactMe").removeClass("selected");
-        $("main").html("<section class='projectsPageData'><section class='projectDescription'><a href='https://github.com/tcgronk/Quiz-App' target='_blank'><h2>Quiz App</h2></a><p>Check out my first project! To create this quiz app, I used HTML, CSS, Javascript, & jQuery. </p></section><section><a class='wineApp' href='https://tcgronk.github.io/Quiz-App/' target='_blank'><img src='portfolio-wine.jpg' alt='portfolio quiz app'></a></section>");
+        $("main").html("<section class='projectsPageData'><a href='https://tcgronk.github.io/outdoorApp/' target='_blank'><h2 class='title'>National Park App</h2></a><ul class='projectDescription'><li>Check out my national park app! To create this park app, I used HTML, CSS, Javascript, & jQuery.I also used data from the National Parks Service API, the weatherbit API, and the Foursquare API.</li><li><a class='parkApp' href='https://tcgronk.github.io/outdoorApp/' target='_blank'><img src='ParkApp.jpg' alt='portfolio park app'></a></li></ul><a href='https://github.com/tcgronk/Quiz-App' target='_blank'><h2 class='title'>Quiz App</h2></a><ul class='projectDescription'><li>This was my first project! To create this quiz app, I used HTML, CSS, Javascript, & jQuery.</li><li><a class='wineApp' href='https://tcgronk.github.io/Quiz-App/' target='_blank'><img src='portfolio-wine.jpg' alt='portfolio quiz app'></a></li></ul></section>");
     });
 }
 
