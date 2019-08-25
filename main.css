@@ -44,15 +44,20 @@ a{
 h2{
     color: black;     
 }
-.projectDescription{
-    width: 80%;
-    padding: 0;
-    text-align: center;
-}
 
-.projectDescription>a>{
+.grid-container{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 100%;   
+}
+.grid-item{
+    width: 80%;
+    display: grid;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 img:hover{
@@ -76,12 +81,12 @@ button{
     font-size: 35px;
     outline:none;
 }
-.personalBio, .projectsPageData,.contacting{
+.personalBio,.contacting{
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.projectsPageData>a,.contacting>p{
+.contacting>p{
     margin-left: auto;
     margin-right: auto;
     display: block;
