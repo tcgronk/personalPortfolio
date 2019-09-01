@@ -180,6 +180,9 @@ img{
         justify-content: space-between;
         padding: 0;
     }
+    .social:hover{
+        font-size:34px;
+    }
     .social{
         margin-left:auto;
         margin-right:auto;
