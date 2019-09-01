@@ -20,9 +20,6 @@ function sideBar(){
 
 function homePage(){
     $(".home").on("click",function(event){
-        $(".home").addClass("selected");
-        $(".contactMe").removeClass("selected");
-        $(".projects").removeClass("selected");
         renderHomePage();
     });
 }
@@ -49,10 +46,15 @@ function renderHomePage(){
     $(".home").addClass("selected");
     $(".projects").removeClass("selected");
     $(".contactMe").removeClass("selected");
-    $("main").html("<section class='personalBio'><p>Hi &#x1F44B I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management.</p></section>");
+    $("main").html("<section class='personalBio'><p><span class='wave'>&#x1F44B</span>  Hi! I'm Tess. I am a web developer based in San Francisco. I am currently enrolled in Bloc's Web Developer program with a Close the Gap scholarship.</p><p> I love learning how to code because it is a combination of math and language. I am excited to combine my new technical skills with my passion for data, leadership, and project management.</p></section>");
 }
 
-
+function homePageInitial(){
+    $(".initial").click(event =>{
+        event.preventDefault();
+        renderHomePage();
+    })
+}
 
 
 
@@ -60,6 +62,7 @@ function renderHomePage(){
 
 function createPortfolio(){
     homePage();
+    homePageInitial();
     sideBar();
     projectsPage();
     contactPage();
